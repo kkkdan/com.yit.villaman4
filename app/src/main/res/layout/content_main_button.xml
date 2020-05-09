@@ -1,0 +1,524 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlParentMap"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+
+    <LinearLayout
+        android:id="@+id/ll_top_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/px70"
+        android:background="#0000ff"
+        android:orientation="horizontal" >
+
+        <include layout="@layout/content_main_top_bar" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_info_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/px120"
+        android:layout_above="@+id/ll_bottom_bar"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <include layout="@layout/content_main_webview_bar" />
+    </LinearLayout>
+
+    <!-- 메인화면 - 하단 버튼 -->
+    <LinearLayout
+        android:id="@+id/ll_bottom_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/px98"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="1dp"
+        android:orientation="horizontal" >
+
+        <include layout="@layout/content_main_bottom_bar" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/llFragMap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_info_bar"
+        android:layout_below="@+id/ll_top_bar"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <net.daum.mf.map.api.MapView
+                android:id="@+id/map_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/px110"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <View
+                        android:layout_width="20dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"/>
+                    <Button
+                        android:id="@+id/btnSi"
+                        android:layout_width="@dimen/px280"
+                        android:layout_height="@dimen/px80"
+                        android:layout_marginTop="@dimen/px6"
+                        android:background="@drawable/input_box_off"
+                        android:text="시·도 선택"
+                        android:textSize="@dimen/px40" />
+
+                    <Button
+                        android:id="@+id/btnGu"
+                        android:layout_width="@dimen/px280"
+                        android:layout_height="@dimen/px80"
+                        android:layout_marginLeft="@dimen/px14"
+                        android:layout_marginTop="@dimen/px6"
+                        android:background="@drawable/input_box_off"
+                        android:text="군·구 선택"
+                        android:textSize="@dimen/px40" />
+
+                    <Button
+                        android:id="@+id/btnDong"
+                        android:layout_width="@dimen/px280"
+                        android:layout_height="@dimen/px80"
+                        android:layout_marginLeft="@dimen/px13"
+                        android:layout_marginTop="@dimen/px6"
+                        android:background="@drawable/input_box_off"
+                        android:text="읍·면·동 선택"
+                        android:textSize="@dimen/px40" />
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"/>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/px90"
+                        android:layout_height="@dimen/px80"
+                        android:layout_marginTop="@dimen/px5"
+                        android:layout_marginRight="@dimen/px5"
+                        android:gravity="right"
+                        android:orientation="horizontal" >
+                        <Button
+                            android:id="@+id/btnCurPosition"
+                            android:layout_width="@dimen/px70"
+                            android:layout_height="@dimen/px70"
+                            android:layout_marginTop="@dimen/px5"
+                            android:layout_marginLeft="@dimen/px1"
+                            android:layout_marginRight="@dimen/px10"
+                            android:background="@drawable/action_btn_bg_curposition"
+                            android:gravity="top|right"
+                            android:visibility="visible" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="15dp"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="@dimen/px1"
+                        android:layout_marginRight="@dimen/px20"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/btnVilAll"
+                            android:layout_width="@dimen/px190"
+                            android:layout_height="@dimen/px70"
+                            android:layout_marginLeft="@dimen/px10"
+                            android:layout_marginTop="@dimen/px2"
+                            android:background="@color/vilmainRent"
+                            android:text="전체"
+                            android:textSize="@dimen/px40" />
+
+                        <Button
+                            android:id="@+id/btnVilOld"
+                            android:layout_width="@dimen/px190"
+                            android:layout_height="@dimen/px70"
+                            android:layout_marginLeft="@dimen/px10"
+                            android:layout_marginTop="@dimen/px5"
+                            android:background="@drawable/input_box_off"
+                            android:text="전세"
+                            android:textSize="@dimen/px40" />
+
+                        <Button
+                            android:id="@+id/btnVilNew"
+                            android:layout_width="@dimen/px190"
+                            android:layout_height="@dimen/px70"
+                            android:layout_marginLeft="@dimen/px10"
+                            android:layout_marginTop="@dimen/px5"
+                            android:background="@drawable/input_box_off"
+                            android:text="월세"
+                            android:textSize="@dimen/px40" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="200dp"
+                        android:layout_height="60dp"
+                        android:gravity="right"
+                        android:layout_weight="1"
+                        android:layout_marginTop="@dimen/px1"
+                        android:layout_marginRight="@dimen/px10"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="6dp"
+                            android:layout_marginTop="@dimen/px1"
+                            android:layout_marginRight="@dimen/px1"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btnVilArea"
+                                android:layout_width="@dimen/px280"
+                                android:layout_height="@dimen/px70"
+                                android:layout_marginRight="@dimen/px5"
+                                android:layout_toLeftOf="@id/btnCurPosition"
+                                android:background="@drawable/action_btn_bg_general"
+                                android:text="근처지역 선택"
+                                android:textSize="@dimen/px36" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/dataVilArea"
+                                android:layout_width="@dimen/px140"
+                                android:layout_height="@dimen/px55"
+                                android:layout_marginTop="@dimen/px5"
+                                android:layout_marginRight="@dimen/px5"
+                                android:background="@drawable/action_btn_bg_general"
+                                android:padding="2dp"
+                                android:gravity="top|right"
+                                android:text="1,500 m"
+                                android:textColor="#ff0000"
+                                android:textSize="@dimen/px34"
+                                android:textStyle="italic" />
+                        </LinearLayout>
+
+
+                        <!-- Button 19b1bc
+                            android:id="@+id/btnzoomin"
+                            android:layout_width="@dimen/px100"
+                            android:layout_height="@dimen/px100"
+                            android:background="@drawable/ic_zoom_in_black_36dp"
+                            android:visibility="invisible"/>
+
+                        <Button
+                            android:id="@+id/btnzoomout"
+                            android:layout_width="@dimen/px100"
+                            android:layout_height="@dimen/px100"
+                            android:layout_marginTop="@dimen/px2"
+                            android:background="@drawable/ic_zoom_out_black_36dp"
+                            android:visibility="invisible"/ -->
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+        <WebView
+            android:id="@+id/web_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/llBottom_bar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="vertical"
+                android:visibility="invisible">
+
+
+                <LinearLayout
+                    android:id="@+id/llBottom_hbar11"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:orientation="horizontal" >
+                    <Button
+                        android:id="@+id/btn_favorite"
+                        android:layout_width="@dimen/px200"
+                        android:layout_height="@dimen/px70"
+                        android:layout_marginLeft="@dimen/px10"
+                        android:layout_marginBottom="@dimen/px6"
+                        android:background="@drawable/input_box_off"
+                        android:text="즐겨찾기"
+                        android:textColor="#017bbc"
+                        android:textSize="@dimen/px40" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llBottom_hbar00"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:orientation="horizontal" >
+                    <Button
+                        android:id="@+id/btn_actual_price"
+                        android:layout_width="@dimen/px200"
+                        android:layout_height="@dimen/px70"
+                        android:layout_marginLeft="@dimen/px10"
+                        android:layout_marginBottom="@dimen/px6"
+                        android:background="@drawable/action_btn_bg_transparent"
+                        android:text="실 거래가"
+                        android:textColor="#017bbc"
+                        android:textSize="@dimen/px40" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llBottom_hbar01"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:orientation="horizontal" >
+                    <Button
+                        android:id="@+id/btn_main_standby"
+                        android:layout_width="@dimen/px200"
+                        android:layout_height="@dimen/px70"
+                        android:layout_marginLeft="@dimen/px10"
+                        android:layout_marginBottom="@dimen/px6"
+                        android:background="@drawable/action_btn_bg_transparent"
+                        android:text="매물 등록"
+                        android:textColor="#017bbc"
+                        android:textSize="@dimen/px40" />
+                    <TextView
+                        android:id="@+id/data_main_standby"
+                        android:layout_width="@dimen/px180"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/px1"
+                        android:layout_marginLeft="@dimen/px8"
+                        android:layout_alignBottom="@id/btn_main_board"
+                        android:text="④"
+                        android:textColor="#017bbc"
+                        android:textStyle="italic"
+                        android:textSize="@dimen/px34" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llBottom_hbar02"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/px5"
+                    android:layout_gravity="bottom"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/btn_main_board"
+                        android:layout_width="@dimen/px200"
+                        android:layout_height="@dimen/px70"
+                        android:layout_marginLeft="@dimen/px10"
+                        android:layout_marginBottom="@dimen/px6"
+                        android:background="@drawable/action_btn_bg_transparent"
+                        android:text="게시판"
+                        android:textColor="#017bbc"
+                        android:textSize="@dimen/px40"/>
+
+                    <TextView
+                        android:id="@+id/data_main_board"
+                        android:layout_width="@dimen/px80"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/px1"
+                        android:layout_marginLeft="@dimen/px8"
+                        android:layout_alignBottom="@id/btn_main_board"
+                        android:text="④"
+                        android:textColor="#017bbc"
+                        android:textStyle="italic"
+                        android:textSize="@dimen/px34" />
+
+                    <TextView
+                        android:id="@+id/txt_main_board"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/px1"
+                        android:layout_marginLeft="@dimen/px1"
+                        android:layout_alignBottom="@id/btn_main_board"
+                        android:text="매매를 원합니다."
+                        android:textColor="#017bbc"
+                        android:textStyle=""
+                        android:textSize="@dimen/px34" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/relSubTotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/px80"
+                        android:layout_marginRight="@dimen/px20"
+                        android:gravity="right"
+                        android:layout_weight="0.54">
+
+                        <TextView
+                            android:id="@+id/txtSubTotal"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:text="9개"
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/px40"
+                            android:textStyle=""
+                            android:visibility="invisible"
+                            android:background="@drawable/input_box_oldnew_y" />
+                        <!-- android:background="@drawable/input_box_oldnew_y" row_choice_list_bg / -->
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        <!-- WebView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/webview_popup">
+        </WebView -->
+
+    </FrameLayout>
+
+    <!-- 리스트 목록 -->
+    <LinearLayout
+        android:id="@+id/llCoverContent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_info_bar"
+        android:layout_below="@+id/ll_top_bar"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/llPole"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px410"
+            android:orientation="horizontal" />
+
+        <RelativeLayout
+            android:id="@+id/rlPosition"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px100"
+            android:clickable="true" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px100"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@color/vilmainRent"
+                android:layout_alignParentLeft="true" />
+
+            <!-- 리스트에서 더보기 버튼 -->
+            <Button
+                android:id="@+id/viewMoreSub"
+                android:layout_width="@dimen/px66"
+                android:layout_height="@dimen/px60"
+                android:layout_marginLeft="@dimen/px30"
+                android:layout_marginTop="@dimen/px20"
+                android:background="@drawable/view_moresub"/>
+
+
+            <!-- 리스트에서 문자 버튼 -->
+            <!-- Button
+                android:id="@+id/btnLetterSend"
+                android:layout_width="@dimen/px60"
+                android:layout_height="@dimen/px80"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/px20"
+                android:layout_marginTop="@dimen/px2"
+                android:background="@drawable/btn_letter"/ -->
+
+            <TextView
+                android:id="@+id/tvAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:includeFontPadding="false"
+                android:singleLine="true"
+                android:text="빌라 목록"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/px46"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="@dimen/px66"
+                android:layout_height="@dimen/px66"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/px150"
+                android:layout_marginTop="@dimen/px14"
+                android:background="@drawable/btn_back"/>
+
+            <Button
+                android:id="@+id/btnClose"
+                android:layout_width="@dimen/px76"
+                android:layout_height="@dimen/px76"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/px30"
+                android:layout_marginTop="@dimen/px10"
+                android:background="@drawable/btn_x" />
+
+
+            <Button
+                android:id="@+id/btnRefresh"
+                android:layout_width="@dimen/px76"
+                android:layout_height="@dimen/px76"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/px170"
+                android:layout_marginTop="@dimen/px10"
+                android:visibility="invisible"
+                android:background="@drawable/btn_refresh" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/lilaRoomList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/px10" >
+
+            <ListView
+                android:id="@+id/listRoomList"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="#00000000"
+                android:divider="#ffffff" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

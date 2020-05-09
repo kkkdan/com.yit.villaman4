@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/rowDetailLayer"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="@drawable/row_list_bg"
+	android:orientation="vertical"
+	android:paddingLeft="@dimen/px10"
+	android:paddingRight="@dimen/px10"
+	android:paddingTop="@dimen/px10"
+	android:paddingBottom="@dimen/px10">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_toRightOf="@id/imgRView"
+		android:textIsSelectable="true">
+
+
+		<ImageView
+			android:id="@+id/imgRView"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:layout_alignParentStart="true"
+			android:layout_alignParentTop="true"
+			app:srcCompat="@drawable/ic_blank"
+			android:layout_alignParentLeft="true" />
+		<Button
+			android:id="@+id/btnYoutube"
+			android:layout_width="@dimen/px54"
+			android:layout_height="@dimen/px54"
+			android:layout_marginLeft="@dimen/px10"
+			android:layout_marginTop="@dimen/px10"
+			android:background="@drawable/youtube" />
+
+		<Button
+			android:id="@+id/btnImgDelete"
+			android:layout_width="@dimen/px60"
+			android:layout_height="@dimen/px60"
+			android:layout_marginLeft="@dimen/px15"
+			android:layout_marginTop="@dimen/px120"
+			android:background="@drawable/ic_imgdelete" />
+
+		<Button
+			android:id="@+id/btnImgAppend"
+			android:layout_width="@dimen/px80"
+			android:layout_height="@dimen/px80"
+			android:layout_marginLeft="@dimen/px80"
+			android:layout_marginTop="@dimen/px100"
+			android:background="@drawable/ic_imgappend" />
+
+		<TextView
+			android:id="@+id/dataMoney"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/px20"
+			android:text="3,400 / 3,000"
+			android:textColor="#FF0000"
+			android:textSize="@dimen/px40"
+			android:textStyle="bold"
+			android:layout_toRightOf="@id/imgRView"/>
+
+		<TextView
+			android:id="@+id/dataYear"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/px10"
+			android:layout_marginLeft="@dimen/px15"
+			android:layout_toRightOf="@id/dataMoney"
+			android:text="(9999년)"
+			android:textColor="#304553"
+			android:textSize="@dimen/px30"
+			android:textStyle="bold" />
+
+		<TextView
+			android:id="@+id/dataTel"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toLeftOf="@id/lilaDate"
+			android:layout_marginTop="@dimen/px1"
+			android:layout_marginRight="@dimen/px10"
+			android:gravity="right"
+			android:text="☎:계약 상담"
+			android:textColor="#7f7f7f"
+			android:textSize="@dimen/px28"/>
+
+		<TextView
+			android:id="@+id/dataTelName"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toLeftOf="@id/lilaDate"
+			android:layout_marginTop="@dimen/px40"
+			android:layout_marginRight="@dimen/px10"
+			android:gravity="right"
+			android:text="크로바부동산"
+			android:textColor="#7f7f7f"
+			android:textSize="@dimen/px28"/>
+
+		<TextView
+			android:id="@+id/dataImgCnt"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/px10"
+			android:layout_marginTop="@dimen/px90"
+			android:text="99"
+			android:textColor="#007FFF"
+			android:textStyle="italic"
+			android:textSize="@dimen/px30" />
+
+		<TextView
+			android:id="@+id/textCon"
+			android:layout_width="200dp"
+			android:layout_height="44dp"
+			android:layout_below="@id/dataMoney"
+			android:layout_marginLeft="@dimen/px20"
+			android:layout_marginTop="@dimen/px10"
+			android:layout_toEndOf="@id/imgRView"
+			android:layout_toStartOf="@id/lilaDate"
+			android:autoLink="none"
+			android:background="#00000000"
+			android:gravity="left|top"
+			android:text="textCon 99999999999999999999999999999999999999999999999999999999999999999777"
+			android:textColor="#304553"
+			android:textIsSelectable="false"
+			android:textSize="@dimen/px32"
+			android:layout_toRightOf="@id/imgRView"
+			android:layout_toLeftOf="@id/lilaDate" />
+
+		<ImageView
+			android:id="@+id/imgJeonAreaBar"
+			android:layout_width="45dp"
+			android:layout_height="4dp"
+			android:layout_marginLeft="@dimen/px3"
+			android:layout_marginTop="@dimen/px198"
+			app:srcCompat="@drawable/ico_jeonarea_bar9" />
+
+		<TextView
+			android:id="@+id/dataTextLevel"
+			android:layout_width="10dp"
+			android:layout_height="wrap_content"
+			android:layout_alignStart="@id/imgJeonAreaBar"
+			android:layout_marginTop="@dimen/px170"
+			android:layout_marginLeft="@dimen/px125"
+			android:text="③"
+			android:textAlignment="center"
+			android:textColor="#0000FF"
+			android:textSize="@dimen/px32"
+			android:textStyle="" />
+
+		<TextView
+			android:id="@+id/dataJeon"
+			android:layout_width="43dp"
+			android:layout_height="wrap_content"
+			android:layout_alignStart="@id/imgRView"
+			android:layout_alignTop="@id/imgJeonAreaBar"
+			android:layout_marginLeft="@dimen/px10"
+			android:layout_marginTop="@dimen/px30"
+			android:text="전용..평"
+			android:textAlignment="center"
+			android:textColor="#304553"
+			android:textSize="@dimen/px32"
+			android:textStyle=""
+			android:layout_alignLeft="@id/imgRView" />
+
+		<ImageView
+			android:id="@+id/imgPortrateBar"
+			android:layout_width="4dp"
+			android:layout_height="30dp"
+			android:layout_alignTop="@id/imgJeonAreaBar"
+			android:layout_toEndOf="@id/dataJeon"
+			android:layout_marginTop="@dimen/px26"
+			app:srcCompat="@drawable/ico_level_bar6"
+			android:layout_toRightOf="@id/dataJeon" />
+
+		<TextView
+			android:id="@+id/dataMessage"
+			android:layout_width="240dp"
+			android:layout_height="36dp"
+			android:layout_below="@id/textCon"
+			android:layout_marginLeft="@dimen/px20"
+			android:layout_marginRight="@dimen/px10"
+			android:layout_marginTop="@dimen/px2"
+			android:layout_toEndOf="@id/imgPortrateBar"
+			android:scrollbars="vertical"
+			android:text="text109999999999999999999999999999999999999999999999999999"
+			android:textColor="#7f7f7f"
+			android:textSize="@dimen/px30"
+			android:textStyle=""
+			android:layout_toRightOf="@id/imgPortrateBar" />
+
+		<LinearLayout
+			android:id="@+id/lilaPicList"
+			android:layout_width="100dp"
+			android:layout_height="wrap_content"
+			android:layout_alignParentEnd="true"
+			android:layout_alignRight="@id/dataMessage"
+			android:layout_marginTop="@dimen/px30"
+			android:layout_marginRight="@dimen/px10"
+			android:layout_below="@id/textCon"
+			android:gravity="right|center_vertical"
+			android:orientation="horizontal"
+			android:layout_alignParentRight="true">
+
+			<Button
+				android:id="@+id/btnGoRoad"
+				android:layout_width="@dimen/px82"
+				android:layout_height="@dimen/px80"
+				android:layout_marginLeft="@dimen/px17"
+				android:background="@drawable/ic_goroad_m" />
+
+			<Button
+				android:id="@+id/btnGoSms"
+				android:layout_width="@dimen/px82"
+				android:layout_height="@dimen/px80"
+				android:layout_marginLeft="@dimen/px17"
+				android:background="@drawable/ic_gosms_m" />
+
+			<Button
+				android:id="@+id/btnGoReply"
+				android:layout_width="@dimen/px82"
+				android:layout_height="@dimen/px80"
+				android:layout_marginLeft="@dimen/px17"
+				android:layout_marginRight="@dimen/px15"
+				android:background="@drawable/ic_goreply_n_m" />
+
+		</LinearLayout>
+
+		<TextView
+			android:id="@+id/dataDeleteCnt"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentEnd="true"
+			android:layout_alignBottom="@id/lilaPicList"
+			android:layout_marginRight="@dimen/px106"
+			android:layout_marginTop="@dimen/px90"
+			android:text="9"
+			android:textColor="#FF0000"
+			android:textStyle="italic|bold"
+			android:textSize="@dimen/px32"
+			android:layout_alignParentRight="true"
+			android:visibility="invisible"/>
+
+		<TextView
+			android:id="@+id/dataReplyCnt"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentEnd="true"
+			android:layout_alignBottom="@id/lilaPicList"
+			android:layout_marginRight="@dimen/px30"
+			android:layout_marginTop="@dimen/px90"
+			android:text="9"
+			android:textColor="#FF0000"
+			android:textStyle="italic|bold"
+			android:textSize="@dimen/px32"
+			android:layout_alignParentRight="true" />
+
+
+		<WebView
+			android:id="@+id/webview_list"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/px320"
+			android:visibility="gone"
+			/>
+
+		<LinearLayout
+			android:id="@+id/lilaDate"
+			android:layout_width="40dp"
+			android:layout_height="60dp"
+			android:layout_alignParentEnd="true"
+			android:gravity="right"
+			android:orientation="vertical"
+			android:layout_alignParentRight="true">
+
+			<TextView
+				android:id="@+id/dataDateCnt01"
+				android:layout_width="35dp"
+				android:layout_height="15dp"
+				android:gravity="top|left"
+				android:text="99/99"
+				android:textAlignment="center"
+				android:textColor="#007FFF"
+				android:textStyle=""
+				android:textSize="@dimen/px30"
+				/>
+
+			<TextView
+				android:id="@+id/dataDateCnt02"
+				android:layout_width="35dp"
+				android:layout_height="18dp"
+				android:layout_centerHorizontal="true"
+				android:gravity="center_horizontal"
+				android:text="82"
+				android:textAlignment="center"
+				android:textColor="#007FFF"
+				android:textSize="@dimen/px30"
+				/>
+
+			<TextView
+				android:id="@+id/dataDateCnt03"
+				android:layout_width="35dp"
+				android:layout_height="15dp"
+				android:layout_centerHorizontal="true"
+				android:gravity="center_horizontal"
+				android:text="82"
+				android:textAlignment="center"
+				android:textColor="#7f7f7f"
+				android:textSize="@dimen/px30"
+				/>
+
+			<TextView
+				android:id="@+id/dataDateCnt04"
+				android:layout_width="35dp"
+				android:layout_height="15dp"
+				android:gravity="bottom"
+				android:text="99/99"
+				android:textColor="#7f7f7f"
+				android:textSize="@dimen/px30"
+				/>
+
+		</LinearLayout>
+
+	</RelativeLayout>
+</LinearLayout>

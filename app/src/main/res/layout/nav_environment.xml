@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="@dimen/px1000"
+        android:layout_height="@dimen/px90"
+        android:layout_weight="0.00"
+        android:background="@color/vilmainRent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px70"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="1dp"
+            android:includeFontPadding="false"
+            android:text="환경 설정"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/px42"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnDialogClose"
+            android:layout_width="@dimen/px66"
+            android:layout_height="@dimen/px66"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/px12"
+            android:layout_marginRight="@dimen/px50"
+            android:background="@drawable/btn_x" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/px1000"
+        android:layout_height="wrap_content"
+        android:background="@drawable/popup_list_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="@dimen/px1000"
+            android:layout_height="@dimen/px40"
+            android:layout_marginTop="@dimen/px10"
+            android:gravity="left"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="@dimen/px1000"
+            android:layout_height="@dimen/px20">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/px1000"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px20"
+            android:layout_marginBottom="@dimen/px10"
+            android:gravity="left"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/environ001"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px20"
+                android:text="  ▣ 근처 지역 ["
+                android:layout_gravity="center_vertical"
+                android:textColor="#000000"
+                android:textSize="@dimen/px35" />
+            <TextView
+                android:id="@+id/Env_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px2"
+                android:text="500"
+                android:layout_gravity="center_vertical"
+                android:padding="@dimen/px10"
+                android:background="#ffffff"
+                android:textColor="#ff0000"
+                android:textSize="@dimen/px40" />
+            <!-- EditText
+                android:id="@+id/Env_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:gravity="center_vertical"
+                android:hint="0"
+                android:inputType="numberDecimal"
+                android:maxLength="5"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textSize="@dimen/px28" / -->
+
+            <TextView
+                android:id="@+id/environ002"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="]m 의 매물을 조회합니다."
+                android:textColor="#000000"
+                android:textSize="@dimen/px35"
+                android:layout_marginLeft="@dimen/px2"
+                />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="@dimen/px1000"
+            android:layout_height="@dimen/px600">
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="@dimen/px1000"
+            android:layout_height="@dimen/px20">
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="@dimen/px1000"
+            android:layout_height="@dimen/px110"
+            android:layout_marginTop="@dimen/px10"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnNavEnvironmentConfirm"
+                android:layout_width="@dimen/px190"
+                android:layout_height="@dimen/px80"
+                android:background="@drawable/btn_kedit_confirm_selector" />
+
+            <Button
+                android:id="@+id/btnNavEnvironmentCancel"
+                android:text="닫기"
+                android:textSize="@dimen/px40"
+                android:textColor="#ffffff"
+                android:layout_width="@dimen/px190"
+                android:layout_height="@dimen/px80"
+                android:layout_marginLeft="@dimen/px10"
+                android:background="@drawable/button3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/px1000"
+            android:layout_height="@dimen/px20"
+            android:layout_marginTop="@dimen/px10"
+            android:gravity="center"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

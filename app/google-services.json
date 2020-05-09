@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "995578167602",
+    "firebase_url": "https://villaman4.firebaseio.com",
+    "project_id": "villaman4",
+    "storage_bucket": "villaman4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:995578167602:android:6232164293a8323860d72b",
+        "android_client_info": {
+          "package_name": "com.yit.villaman4"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "995578167602-b5nu9gbs8ftvs50f8v536dr5f5cmkoh4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.yit.villaman4",
+            "certificate_hash": "97e9420223bbf278991c42cdd2a6a9e1d6dff640"
+          }
+        },
+        {
+          "client_id": "995578167602-p6vn78tbg43nh34o2uoi051mf9n27sj8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_i8vwavUhwJMSYs9J6DqCxPWhO1qCH9g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "995578167602-p6vn78tbg43nh34o2uoi051mf9n27sj8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

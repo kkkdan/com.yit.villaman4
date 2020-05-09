@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="@dimen/px1000"
+        android:layout_height="@dimen/px90"
+        android:background="@color/vilmainRent"
+        android:layout_weight="0.00">
+
+        <TextView
+            android:id="@+id/LoginTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px70"
+            android:layout_alignParentBottom="true"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1dp"
+            android:includeFontPadding="false"
+            android:text="로그인"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/px42"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/px1000"
+        android:layout_height="wrap_content"
+        android:background="@drawable/popup_list_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="@dimen/px1000"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="@dimen/px1000"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/px20"
+                    android:layout_marginLeft="@dimen/px50"
+                    android:layout_marginTop="@dimen/px20"
+                    android:text="● 전화번호 :"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/px40" />
+
+                <EditText
+                    android:id="@+id/phoneNumber"
+                    android:layout_width="120dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="@dimen/px20"
+                    android:layout_marginTop="@dimen/px10"
+                    android:layout_marginRight="@dimen/px20"
+                    android:hint="010????????"
+                    android:imeOptions="actionSearch"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/px40" />
+
+                <TextView
+                    android:id="@+id/phoneRequest"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/px50"
+                    android:layout_marginTop="@dimen/px20"
+                    android:layout_marginBottom="@dimen/px20"
+                    android:text="①회원가입"
+                    android:textColor="#0000FF"
+                    android:textSize="@dimen/px40" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/px1000"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="@dimen/px1000"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/px20"
+                    android:layout_marginLeft="@dimen/px50"
+                    android:layout_marginTop="@dimen/px20"
+                    android:text="● 인증번호 :"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/px40" />
+
+                <EditText
+                    android:id="@+id/passWd"
+                    android:layout_width="120dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="@dimen/px20"
+                    android:layout_marginTop="@dimen/px10"
+                    android:layout_marginRight="@dimen/px20"
+                    android:hint="인증 요청 ☞"
+                    android:imeOptions="actionSearch"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/px40" />
+
+                <TextView
+                    android:id="@+id/passRequest"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/px50"
+                    android:layout_marginTop="@dimen/px20"
+                    android:layout_marginBottom="@dimen/px20"
+                    android:text="②인증 요청"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/px40" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="@dimen/px1000"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="@dimen/px760"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnHomeLog"
+                    android:layout_width="@dimen/px80"
+                    android:layout_height="@dimen/px80"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/px40"
+                    android:layout_marginTop="@dimen/px50"
+                    android:background="@drawable/home" />
+
+                <TextView
+                    android:id="@+id/Message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/px40"
+                    android:layout_marginTop="@dimen/px45"
+                    android:layout_marginBottom="@dimen/px20"
+                    android:text="회원 가입 후 사용 가능합니다."
+                    android:textColor="#5b5b5b"
+                    android:textSize="@dimen/px40" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/mamaePicture"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/px1"
+                    android:layout_marginTop="@dimen/px20"
+                    android:layout_marginBottom="@dimen/px20"
+                    android:text="③명함 등록"
+                    android:textColor="#0000FF"
+                    android:textSize="@dimen/px40" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/px1000"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="@dimen/px760"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/Message11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px40"
+                    android:layout_marginTop="@dimen/px1"
+                    android:layout_marginBottom="@dimen/px1"
+                    android:gravity="center_vertical|center"
+                    android:text="문의 전화 : 010-8676-0862"
+                    android:textColor="#5b5b5b"
+                    android:textSize="@dimen/px30" />
+
+                <TextView
+                    android:id="@+id/txtPay_Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/px20"
+                    android:layout_marginTop="1dp"
+                    android:gravity="center"
+                    android:text="코인:"
+                    android:textColor="#ff0000"
+                    android:textSize="@dimen/px30" />
+
+                <TextView
+                    android:id="@+id/txtPay_Amount"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="right|center"
+                    android:layout_marginLeft="@dimen/px2"
+                    android:layout_marginTop="1dp"
+                    android:gravity="left"
+                    android:text="300 / 9,999,999"
+                    android:textColor="#ff0000"
+                    android:textSize="@dimen/px30" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical|center">
+
+                <TextView
+                    android:id="@+id/txtPay_Bank"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/px1"
+                    android:layout_marginTop="@dimen/px1"
+                    android:text="④충전 하기"
+                    android:textColor="#ff0000"
+                    android:textSize="@dimen/px40" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/px1000"
+            android:layout_height="@dimen/px100"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="@dimen/px1000"
+            android:layout_height="@dimen/px120"
+            android:layout_marginTop="@dimen/px20"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnLoginConfirm"
+                android:layout_width="@dimen/px220"
+                android:layout_height="@dimen/px90"
+                android:layout_marginLeft="@dimen/px250"
+                android:background="@drawable/btn_kedit_confirm_selector" />
+
+             <Button
+                android:id="@+id/btnLoginCancel"
+                android:layout_width="@dimen/px220"
+                android:layout_height="@dimen/px90"
+                android:layout_marginLeft="@dimen/px500"
+                android:background="@drawable/btn_kedit_end_selector" />
+
+            <Button
+                android:id="@+id/btnmamaeRequest"
+                android:text="매물 등록 "
+                android:textSize="@dimen/px34"
+                android:textColor="#ffffff"
+                android:layout_width="@dimen/px200"
+                android:layout_height="@dimen/px70"
+                android:layout_marginTop="@dimen/px20"
+                android:layout_marginLeft="@dimen/px750"
+                android:layout_alignBottom="@id/btnLoginCancel"
+                android:background="@drawable/button"/>
+
+            <TextView
+                android:id="@+id/txtMamaeCnt"
+                android:layout_width="@dimen/px140"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px810"
+                android:layout_marginTop="@dimen/px70"
+                android:gravity="right"
+                android:textAlignment="gravity"
+                android:text="999,999"
+                android:textColor="#FF0000"
+                android:textSize="@dimen/px28"
+                android:textStyle="italic" />
+
+            <Button
+                android:id="@+id/btnLoginManager"
+                android:text="관리자"
+                android:textSize="@dimen/px32"
+                android:textColor="#ffffff"
+                android:layout_width="@dimen/px150"
+                android:layout_height="@dimen/px90"
+                android:layout_marginLeft="@dimen/px20"
+                android:layout_marginRight="@dimen/px20"
+                android:background="@drawable/button"
+                android:visibility="gone"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- 액션 버튼으로써 나타나는 "서치" 아이템  -->
+
+    <item
+        android:id="@+id/action_range_select"
+        android:layout_width="@dimen/px30"
+        android:layout_height="@dimen/px30"
+        android:icon="@drawable/button_select_dialog"
+        android:title="조건"
+        app:showAsAction="always" />
+    <!-- item
+        android:id="@+id/action_range_choice"
+        android:layout_width="@dimen/px30"
+        android:layout_height="@dimen/px30"
+        android:icon="@drawable/button_choice_dialog"
+        android:title="검색"
+        app:showAsAction="always" / -->
+    <!--
+    <item android:id="@+id/action_map_view"
+        android:icon="@drawable/ico_map_view"
+        android:title="지도보기"
+        android:layout_width="@dimen/px80"
+        android:layout_height="@dimen/px80"
+        app:showAsAction="ifRoom" />
+    -->
+<!--
+    <item android:id="@+id/action_fav_view"
+        android:icon="@drawable/ico_fav_view"
+        android:title="즐겨찾기"
+        app:showAsAction="ifRoom" />
+        -->
+<!--
+    <item
+        android:id="@+id/action_map_view"
+        android:orderInCategory="100"
+        android:title="지도보기"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_range_select"
+        android:orderInCategory="100"
+        android:title="상세검색..."
+        app:showAsAction="never" />
+-->
+
+</menu>

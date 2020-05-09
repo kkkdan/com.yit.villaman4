@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+   <group android:id="@+id/group_01">
+      <item
+          android:id="@+id/mnusub_letter01"
+          android:title="문자 발송(개별)"
+          android:icon="@drawable/letter" />
+      <item
+          android:id="@+id/mnusub_letter02"
+          android:title="문자 발송(대량)"
+          android:icon="@drawable/letter" />
+      <item
+          android:id="@+id/mnusub_email"
+          android:title="E-mail 발송"
+          android:icon="@drawable/email" />
+      <item
+          android:id="@+id/mnusub_excel"
+          android:title="Excel 저장"
+          android:icon="@drawable/excel" />
+   </group>
+
+   <group android:id="@+id/group_02">
+      <item
+           android:id="@+id/mnusub_exit"
+           android:title="닫기"
+          android:icon="@drawable/default_check" />
+   </group>
+</menu>

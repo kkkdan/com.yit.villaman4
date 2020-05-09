@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <!-- 2018.02.13 20:00 수정 -->
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_letter_send"
+            android:icon="@drawable/default_check"
+            android:visible="false"
+            android:title="매물 등록(요청) 문자" />
+
+
+        <!--
+        <item
+            android:id="@+id/nav_map_view"
+            android:icon="@drawable/ic_menu_camera"
+            android:layout_height="@dimen/px20"
+            android:title="지도 보기" />
+           -->
+        <!--
+        <item
+            android:id="@+id/nav_login"
+            android:icon="@drawable/ic_menu_camera"
+            android:layout_height="@dimen/px20"
+            android:title="로그인" />
+            -->
+<!--
+        <item
+            android:checkableBehavior="single"
+            android:id="@+id/nav_mae_recommend"
+            android:icon="@drawable/ic_menu_send"
+            android:title="추천 매물" />
+        <item
+            android:id="@+id/nav_mae_complete"
+            android:layout_height="@dimen/px20"
+            android:icon="@drawable/ic_menu_send"
+            android:title="매매 완료" />
+-->
+<!--
+        <item
+            android:id="@+id/nav_main_request"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="매수/매도 의뢰" />
+-->
+        <!-- android:visible="false" -->
+
+        <item
+            android:id="@+id/nav_members"
+            android:icon="@drawable/ic_menu_camera"
+            android:layout_height="@dimen/px20"
+            android:visible="false"
+            android:title="회원 가입" />
+        <item
+            android:id="@+id/nav_actual_price"
+            android:layout_height="@dimen/px30"
+            android:icon="@drawable/ic_menu_share"
+            android:visible="false"
+            android:title="실 거래가 검색" />
+        <item
+            android:id="@+id/nav_main_standby"
+            android:icon="@drawable/ic_menu_send"
+            android:visible="false"
+            android:title="매물 등록" />
+
+
+
+
+        <item
+            android:id="@+id/nav_NavClose"
+            android:icon="@drawable/ic_menu_send"
+            android:layout_height="@dimen/px20"
+            android:title="로그 아웃" />
+
+        <item
+            android:id="@+id/nav_firebaseChat"
+            android:icon="@drawable/ic_menu_manage"
+            android:layout_height="@dimen/px20"
+            android:title="채팅"
+            android:visible="false"/>
+
+        <item
+            android:id="@+id/nav_mamaePicture"
+            android:icon="@drawable/ic_menu_manage"
+            android:layout_height="@dimen/px20"
+            android:title="명함 등록" />
+
+        <item
+            android:id="@+id/nav_villaman_info"
+            android:icon="@drawable/ic_menu_manage"
+            android:layout_height="@dimen/px30"
+            android:title="빌라만 정보" />
+
+        <item
+            android:id="@+id/nav_environment"
+            android:icon="@drawable/ic_menu_manage"
+            android:layout_height="@dimen/px30"
+            android:title="환경 설정" />
+
+        <item
+            android:id="@+id/nav_close"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:layout_height="@dimen/px20"
+            android:title="닫기"/>
+
+    </group>
+
+
+
+    <!--
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_login"
+            android:icon="@drawable/ic_menu_camera"
+            android:layout_height="@dimen/px20"
+            android:title="로그인" />
+        <item
+            android:id="@+id/nav_members"
+            android:icon="@drawable/ic_menu_gallery"
+            android:layout_height="@dimen/px20"
+            android:title="회원가입" />
+        <item
+            android:id="@+id/nav_qna"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="질문" />
+    </group>
+
+    <item android:title="매물 관리">
+        <menu android:checkableBehavior="single">
+            <item
+                android:checkableBehavior="single"
+                android:id="@+id/nav_mae_recommend"
+                android:icon="@drawable/ic_menu_share"
+                android:title="추천 매물" />
+            <item
+                android:id="@+id/nav_mae_complete"
+                android:layout_height="@dimen/px20"
+                android:icon="@drawable/ic_menu_send"
+                android:title="매매 완료" />
+            <item
+                android:id="@+id/nav_actual_price"
+                android:layout_height="@dimen/px30"
+                android:icon="@drawable/ic_menu_send"
+                android:title="실거래가 검색" />
+
+        </menu>
+    </item>
+
+    <item android:title="매물 등록 요청">
+        <menu>
+            <item
+                android:id="@+id/nav_main_request"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="매수/매도 의뢰" />
+            <item
+                android:id="@+id/nav_main_standby"
+                android:icon="@drawable/ic_menu_send"
+                android:title="매물 공개 의뢰(부동산)"
+                />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/nav_close"
+        android:icon="@drawable/ic_menu_send"
+        android:title="닫기"/
+
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="로그인" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="회원가입" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="매수/매도 의뢰" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="질문" />
+    </group>
+    <item android:title="매물 100선/매매완료">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="매물 100선" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="매매완료" />
+
+            <item
+                android:id="@+id/nav_rgst"
+                android:icon="@drawable/ic_menu_send"
+                android:title="매물등록" />
+        </menu>
+    </item>
+    -->
+
+
+</menu>

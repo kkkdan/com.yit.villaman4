@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:id="@+id/act_info"
+    android:gravity="center_vertical"
+    android:weightSum="1"
+    >
+
+    <Button
+        android:id="@+id/btnWebView_Del"
+        android:layout_width="@dimen/px80"
+        android:layout_height="@dimen/px80"
+        android:layout_marginLeft="@dimen/px15"
+        android:background="@drawable/ic_godel_m" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/px100"
+        android:gravity="center_vertical"
+        tools:ignore="WebViewLayout">
+
+        <WebView
+            android:id="@+id/webview_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

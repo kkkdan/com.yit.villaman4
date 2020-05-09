@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_sms"
+    android:layout_width="fill_parent"
+    android:layout_height="200dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textViewPhoneNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px40"
+        android:layout_marginRight="@dimen/px20"
+        android:text="헨드폰 번호 : (01012345678)"
+        android:textColor="#7f7f7f"
+        android:textSize="@dimen/px40"
+        android:inputType="phone"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/editTextPhoneNo"
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/px20"
+        android:layout_marginRight="@dimen/px20"
+        android:phoneNumber="true"
+        android:textSize="@dimen/px40" />
+
+    <Button
+        android:id="@+id/btn_letterContent"
+        android:layout_width="@dimen/px240"
+        android:layout_height="@dimen/px80"
+        android:layout_alignTop="@+id/editTextPhoneNo"
+        android:layout_marginBottom="@dimen/px20"
+        android:layout_marginLeft="@dimen/px10"
+        android:background="@drawable/input_box_off"
+        android:text="만들기"
+        android:textSize="@dimen/px40"
+        android:onClick="btnLetterContent"/>
+
+    <TextView
+        android:id="@+id/textViewSMS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px20"
+        android:layout_marginRight="@dimen/px20"
+        android:text="문자 내용 :"
+        android:textColor="#7f7f7f"
+        android:textSize="@dimen/px40"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/editTextSMS"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="@dimen/px20"
+        android:layout_marginRight="@dimen/px20"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:scrollbars = "vertical"
+        android:textSize="@dimen/px40"
+        android:background="@drawable/row_list_bg"
+        android:lines="10" />
+    <TextView
+        android:id="@+id/textPhoneInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px40"
+        android:layout_marginRight="@dimen/px20"
+        android:text="위의 내용으로 문자를 발송 합니다."
+        android:textColor="#7f7f7f"
+        android:textSize="@dimen/px40"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</LinearLayout>

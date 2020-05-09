@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">빌터-전/월세</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="default_notification_channel_id">com.yit.villaman4</string>
+    <string name="default_notification_channel_name">com.yit.villaman4</string>
+
+</resources>

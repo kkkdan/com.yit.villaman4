@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="@dimen/px1000"
+        android:layout_height="@dimen/px90"
+        android:layout_weight="0.00"
+        android:background="@color/vilmainRent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px70"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="1dp"
+            android:includeFontPadding="false"
+            android:text="조건 선택"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/px42"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnDialogClose"
+            android:layout_width="@dimen/px66"
+            android:layout_height="@dimen/px66"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/px12"
+            android:layout_marginRight="@dimen/px50"
+            android:background="@drawable/btn_x" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/px1000"
+        android:layout_height="wrap_content"
+        android:background="@drawable/popup_list_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="@dimen/px1000"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!--
+                 <CheckBox
+                android:id="@+id/allCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="전체선택"
+                android:textColor="#000000" />
+            -->
+
+            <LinearLayout
+                android:layout_width="@dimen/px1000"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/px20"
+                    android:layout_marginLeft="@dimen/px50"
+                    android:layout_marginTop="@dimen/px20"
+                    android:text="검색어 :"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/px35" />
+
+                <EditText
+                    android:id="@+id/searchText"
+                    android:layout_width="250dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="@dimen/px20"
+                    android:layout_marginRight="@dimen/px20"
+                    android:layout_marginTop="@dimen/px10"
+                    android:hint="빌라명,메모,전화번호로 검색"
+                    android:imeOptions="actionSearch"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/px35" />
+                <!--
+                <CheckBox
+                    android:id="@+id/chkFavorite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="관심 매물"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/px40"/>
+                    -->
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvInputSeekBo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/px5"
+                android:layout_marginLeft="@dimen/px50"
+                android:layout_marginTop="@dimen/px5"
+                android:text="▣ 보증금 : 100 ~ 20000"
+                android:textColor="#000000"
+                android:textSize="@dimen/px35" />
+
+            <LinearLayout
+                android:id="@+id/inputSeekBo"
+                android:layout_width="@dimen/px750"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px200"
+                android:layout_marginRight="@dimen/px50"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvInputSeekMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/px5"
+                android:layout_marginLeft="@dimen/px50"
+                android:layout_marginTop="@dimen/px5"
+                android:text="▣ 월세 : 5 ~ 200"
+                android:textColor="#000000"
+                android:textSize="@dimen/px35" />
+
+            <LinearLayout
+                android:id="@+id/inputSeekMonth"
+                android:layout_width="@dimen/px750"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px200"
+                android:layout_marginRight="@dimen/px50"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/px30"
+                >
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tvJeonCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/px5"
+                android:layout_marginLeft="@dimen/px50"
+                android:layout_marginTop="@dimen/px5"
+                android:text="▣ 전용 : 5 ~ 30"
+                android:textColor="#000000"
+                android:textSize="@dimen/px35" />
+
+            <LinearLayout
+                android:id="@+id/areaSeek"
+                android:layout_width="@dimen/px750"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px200"
+                android:layout_marginRight="@dimen/px50"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvFloorCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/px5"
+                android:layout_marginLeft="@dimen/px50"
+                android:layout_marginTop="@dimen/px5"
+                android:text="▣ 층수 : 0 ~ 7"
+                android:textColor="#000000"
+                android:textSize="@dimen/px35" />
+
+            <LinearLayout
+                android:id="@+id/floorSeek"
+                android:layout_width="@dimen/px750"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px200"
+                android:layout_marginRight="@dimen/px50"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvRoomCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/px5"
+                android:layout_marginLeft="@dimen/px50"
+                android:layout_marginTop="@dimen/px5"
+                android:text="▣ 방수 : 1 ~ 5"
+                android:textColor="#000000"
+                android:textSize="@dimen/px35" />
+
+            <LinearLayout
+                android:id="@+id/roomSeek"
+                android:layout_width="@dimen/px750"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px200"
+                android:layout_marginRight="@dimen/px50"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvYearCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/px5"
+                android:layout_marginLeft="@dimen/px50"
+                android:layout_marginTop="@dimen/px5"
+                android:text="▣ 년식 : 1985 ~ 2019"
+                android:textColor="#000000"
+                android:textSize="@dimen/px35" />
+            <LinearLayout
+                android:id="@+id/yearSeek"
+                android:layout_width="@dimen/px750"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px200"
+                android:layout_marginRight="@dimen/px50"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/px1000"
+            android:layout_height="@dimen/px110"
+            android:layout_marginTop="@dimen/px10"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnRangeConfirm"
+                android:text="검색"
+                android:textSize="@dimen/px40"
+                android:textColor="#ffffff"
+                android:layout_width="@dimen/px190"
+                android:layout_height="@dimen/px80"
+                android:layout_marginLeft="@dimen/px20"
+                android:background="@drawable/button2" />
+
+            <Button
+                android:id="@+id/btnRangeClear"
+                android:text="초기화"
+                android:textSize="@dimen/px40"
+                android:textColor="#ffffff"
+                android:layout_width="@dimen/px190"
+                android:layout_height="@dimen/px80"
+                android:layout_marginLeft="@dimen/px10"
+                android:background="@drawable/button2" />
+
+            <Button
+                android:id="@+id/btnRangeCancel"
+                android:text="닫기"
+                android:textSize="@dimen/px40"
+                android:textColor="#ffffff"
+                android:layout_width="@dimen/px190"
+                android:layout_height="@dimen/px80"
+                android:layout_marginLeft="@dimen/px90"
+                android:background="@drawable/button3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/px1000"
+            android:layout_height="@dimen/px20"
+            android:layout_marginTop="@dimen/px10"
+            android:gravity="center"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

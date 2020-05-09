@@ -1,0 +1,4 @@
+# Referenced at D:\workspace\com.yit.villaman4\app\build\intermediates\merged_manifests\release\armeabi\AndroidManifest.xml:25
+-keep class androidx.core.app.CoreComponentFactory { <init>(); }
+# Referenced at D:\workspace\com.yit.villaman4\app\build\intermediates\merged_manifests\release\armeabi\AndroidManifest.xml:25
+-keep class androidx.multidex.MultiDexApplication { <init>(); }
